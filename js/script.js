@@ -5,7 +5,9 @@ $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
+    center: true,
     responsiveClass:true,
+    dots: false,
     responsive:{
         0:{
             items:1,
@@ -25,6 +27,11 @@ $(document).ready(function(){
     autoplayTimeout:2500,
     autoplayHoverPause:true
 })
+
+
+
+
+
 $('.play').on('click',function(){
     owl.trigger('play.owl.autoplay',[1000])
 })
@@ -32,8 +39,6 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
 
-$('.owl-nav').css("display", "none");
-$(".owl-dots").css("display", "none")
 
 var slider = document.getElementById("myRange");
 var output = document.getElementById("Max");
@@ -90,4 +95,43 @@ output22.addEventListener('change', function(){
 slider2.oninput = function() {
   output11.value = this.value;
 }
+
+
+
+var p = $('.Fixed').position();
+ 
+jQuery(document).ready(function(){
+    window.onscroll = function() {
+        if (window.pageYOffset >= p.top){
+            jQuery('.Fixed').css({position: 'fixed', right: '0.7%', top: '0%'});
+        }
+        else {
+            jQuery('.Fixed').css({position: '', right: '', top: ''});
+        }
+    }
+});
+
+
+document.querySelectorAll('a[href^="#Nav"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+jQuery(document).ready(function(){
+    window.onscroll = function() {
+        if (window.pageYOffset >= 50){
+            jQuery('#GotoTop').css({ display: 'block'});
+        }
+        else {
+            jQuery('#GotoTop').css({ display: 'none'});
+        }
+    }
+});
 

@@ -2,6 +2,17 @@ body {
   margin: 0;
 }
 
+#GotoTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 5000;
+  color: #e40a27;
+  border-radius: 30px;
+  padding: 5px 10px;
+  border: 0.5px solid black;
+}
+
 .fa-map-marker-alt {
   color: #ff0c2d;
 }
@@ -45,10 +56,10 @@ Nav .col-md-9 .custom-col ul {
 Nav .col-md-9 .custom-col ul li a {
   color: black;
   text-decoration: none;
-  transition: all 1s ease;
 }
 Nav .col-md-9 .custom-col ul li a:hover {
   color: #ff0c2d;
+  transition: all 1s ease;
 }
 Nav .col-md-9 .custom-col ul li .button {
   background-color: #ff0c2d;
@@ -59,10 +70,10 @@ Nav .col-md-9 .custom-col ul li .button {
   border-radius: 10px;
   color: white;
   font-family: "Roboto", sans-serif;
-  transition: all 1s ease;
   cursor: pointer;
 }
 Nav .col-md-9 .custom-col ul li .button:hover {
+  transition: all 1s ease;
   background-color: #ad051c;
 }
 
@@ -299,10 +310,37 @@ Nav .col-md-9 .custom-col ul li .button:hover {
 /*VipAds*/
 /*VipAds*/
 #VipAds {
+  position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.288);
   box-shadow: 5px 1px 20px 0px #888888;
   border-width: 2px;
   margin-top: 0px;
+}
+#VipAds .owl-prev {
+  position: absolute;
+  left: -80px;
+  top: 140px;
+  outline: none;
+}
+#VipAds .owl-prev span {
+  font-size: 50px;
+}
+#VipAds .owl-prev:hover {
+  background: white;
+  color: black;
+}
+#VipAds .owl-next {
+  position: absolute;
+  left: 104%;
+  top: 140px;
+  outline: none;
+}
+#VipAds .owl-next span {
+  font-size: 50px;
+}
+#VipAds .owl-next:hover {
+  background: white;
+  color: black;
 }
 #VipAds center {
   padding-top: 20px;
@@ -313,7 +351,7 @@ Nav .col-md-9 .custom-col ul li .button:hover {
   font-family: "Open Sans", sans-serif;
 }
 #VipAds .custom-container {
-  width: 95.6%;
+  width: 79%;
 }
 #VipAds .custom-container center {
   margin-top: 10px;
@@ -486,11 +524,12 @@ Nav .col-md-9 .custom-col ul li .button:hover {
 }
 #List .row .col-md-3 .Custom-Container-Search-Box .custom-colum {
   box-shadow: 1px -2px 20px 4px #d0d0d09c;
-  height: 320px;
+  height: 360px;
   background-color: white;
   border: 2px solid #ff0c2d;
   margin-top: 18px;
   border-radius: 10px;
+  width: 284.730px;
 }
 #List .row .col-md-3 .Custom-Container-Search-Box .custom-colum .MarginTop {
   margin-top: 15px;
@@ -558,4 +597,37 @@ Nav .col-md-9 .custom-col ul li .button:hover {
   border-radius: 50%;
   background: #ff0c2d;
   cursor: pointer;
+}
+
+/*FOOTER*/
+/*FOOTER*/
+/*SignIn*/
+/*SignIn*/
+/*SignIn*/
+/*SignIn*/
+/*SignIn*/
+#Signin form {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+#Signin form h5 {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+#Signin form button {
+  margin-top: 15px;
+  background-color: #ff0c2d;
+  outline: none;
+  border: none;
+  display: block;
+}
+#Signin form a {
+  display: block;
+  padding-top: 10px;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+#Signin .custom-container-Sign {
+  width: 10%;
+  margin: 0 auto;
 }

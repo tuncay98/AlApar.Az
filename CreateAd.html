@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AlApar.Az</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <Nav id="Nav">
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-lg-3 col-xl-3 col-12">
+                    <div class="custom-col">
+                        <div class="Logo ">
+                            <center>
+                                <h3>
+                                    <a href="#">
+                                        <span>Al</span>Apar.Az</a>
+                                </h3>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-xl-9 d-sm-none d-none d-lg-block">
+                    <div class="custom-col">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <input type="text" name="Username" id="" placeholder="Istifadəçi Adı">
+                            </li>
+                            <li class="list-inline-item">
+                                <input type="password" name="Password" id="" placeholder="Şifrə">
+                            </li>
+                            <li class="list-inline-item">
+                                <button class="button" type="submit">Daxil Olun</button>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="badge" href="#">Qeydiyyat</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="badge" href="#">Əlaqə</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Nav>
+
+    <div id="CreateAd">
+        <div class="AddAds-container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="custom-col">
+
+                            <form action="">
+                                <center style="background-color: whitesmoke; padding: 10px; border-radius: 10px;">
+                                    <h6>Əlaqədar Şəxsin Adı:</h6>
+                                    
+                                    <input type="text" name="Name" id="Name"> <br>
+
+                                    <input type="radio" name="SellerType" id="SellerType" value="Mülkiyyətçi"> <span style="margin-right: 5px;">Mülkiyyətçi</span>
+                                    <input type="radio" name="SellerType" id="SellerType" value="Vasitəçi"><span>Vasitəçi</span>
+                                    
+                                    <h6>Telefon:</h6>
+                                    
+                                    <input type="text" name="Phone" id="Phone">
+                                  
+                                    <h6>Email:</h6>
+                                   
+                                    <input type="email" id="Email" name="Email">
+                                    
+
+                                    <div class="CityandType">
+                                        <div class="row">
+                                            <div class="ol-md-12 col-xs-12 col-sm-12 col-lg-12 col-xl-6">
+                                                <h6>Şəhər:</h6>
+                                                <select name="City" id="City">
+                                                    <option value=""></option>
+                                                    <option value="0">Bakı</option>
+                                                </select>
+                                                
+
+                                            </div>
+                                            <div class="ol-md-12 col-xs-12 col-sm-12 col-lg-12 col-xl-6">
+                                                <h6>Mülkün Növü:</h6> 
+                                                
+                                                <select onchange="Change()" name="Categoryİd" id="Categoryİd">
+                                                    <option value=""></option>
+                                                    <option value="0">Yeni Tikili</option>
+                                                    <option value="1">Kohne Tikili</option>
+                                                    <option value="2">Həyət Evi</option>
+                                                    <option value="3">Ofis</option>
+                                                    <option value="4">Qaraj</option>
+                                                    <option value="5">Torpaq</option>
+                                                    <option value="6">Obyekt</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div  id="MenzilOptions" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 col-xl-6">
+                                                <h6>Otaq Sayı:</h6>
+
+                                                <select name="RoomMenzil" id="RoomRoomMenzil">
+                                                    <option value=""></option>
+                                                    <option value="0">1</option>
+                                                    <option value="1">2</option>
+                                                    <option value="2">3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 col-xl-6">
+                                                <h6>Mərtəbə:</h6>
+                                                <select name="Floor" id="Floor">
+                                                    <option value=""></option>
+                                                    <option value="0">1</option>
+                                                    <option value="1">2</option>
+                                                    <option value="2">3</option>
+                                                </select>
+
+                                            </div>
+                                            
+                                                <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12 col-xl-12">
+                                                    <center>
+                                                        <h6>Binanın Mərtəbə Sayı:</h6>
+                                                        <select name="FloorBuilding" id="FloorBuilding">
+                                                            <option value=""></option>
+                                                            <option value="0">3</option>
+                                                            <option value="1">4</option>
+                                                            <option value="2">5</option>
+                                                            <option value="3">6</option>
+                                                        </select>
+                                                    </center>
+                                                </div>
+                                
+                                        </div>
+
+
+                                    </div>
+
+                                    <div id="HeyetEviOption" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 col-xl-6">
+                                                <h6>Otaq Sayı:</h6>
+
+                                                <select name="Roomheyet" id="Roomheyet">
+                                                    <option value=""></option>
+                                                    <option value="0">1</option>
+                                                    <option value="1">2</option>
+                                                    <option value="2">3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 col-xl-6">
+                                                <h6>Torpağın Sahesi (Sot):</h6>
+                                                <input type="text" name="TorpaqSahesi" id="TorpaqSahesi">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="OfisOptions" style="display: none;">
+                                        <div class="row">
+                                            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 col-xl-6">
+                                                <h6>Otaq Sayı:</h6>
+
+                                                <select name="RoomOfis" id="RoomOfis">
+                                                    <option value=""></option>
+                                                    <option value="0">1</option>
+                                                    <option value="1">2</option>
+                                                    <option value="2">3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 col-xs-6 col-sm-6 col-lg-6 col-xl-6">
+                                                <input type="radio" name="MekanTipi" id="MekanTipi"><span>Mənzil</span> <br>
+                                                <input type="radio" name="MekanTipi" id="MekanTipi"><span>Həyət Evi</span> <br>
+                                                <input type="radio" name="MekanTipi" id="MekanTipi"><span>Biznes Mərkəzi </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <h6>Sahə:</h6>
+                                    <input type="text" id="littleWidth"><span id="MorS"> m²</span>
+                                    
+                                    <h6>Məlumat:</h6>
+                                    <textarea name="Melumat" id="Melumat" cols="30" rows="7" maxlength="300"></textarea>
+
+                                    <h6>Qiymət:</h6>
+                                    <input type="number" name="PriceOfAd" id="PriceOfAd" min="0"> <span style="position: absolute; margin-left: 5px">Azn</span>
+
+                                    <h6>Ünvan:</h6>
+                                    <input type="text" name="Unvan" id="Unvan">
+
+                                    <div id="BakiRayonQesebe" style="display: none">
+                                        
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                <h6>Rayon:</h6>
+                                                <select name="Rayon" id="Rayon">
+                                                    <option value=""></option>
+                                                    <option value="0">Nerimanov</option>
+                                                </select>
+            
+
+                                            </div>
+                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+
+            
+                                                <h6>Qəsəbə:</h6>
+                                                <select name="Qesebe" id="Qesebe">
+                                                    <option value=""></option>
+                                                    <option value="0">5-ci mikrorayon</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6>Xəritədə Ünvan:</h6>
+                                    <div id="Xerite">
+                                            <div id="map"></div>
+                                    </div>
+                                    <input type="hidden" name="Xloc" id="Xloc">
+                                    <input type="hidden" name="Yloc" id="Yloc">
+                                    <br>
+                                    <h6>Şəkilləri Yüklə:</h6>
+                                    <div>
+                                           <center>
+                                                <label id="Uploading" for="PhotoUpload">Yüklə</label><br>
+                                                <span style="font-size: 12px">*-Silmək üçün şəklin üzərinə basın</span>
+                                                <span style="font-size: 12px">*-Minimum 3 şəkil yükləmən olar</span>
+                                            <input type="file" accept=".png, .jpg, .jpeg" style="visibility: hidden" name="PhotoUpload" id="PhotoUpload" multiple>
+                                            
+                                           </center>
+                                    </div>
+                                    <div id="PhotoComing">
+
+                                    </div>
+                                    <h6>Qaydalar:</h6>
+                                    <div style="margin-top: 0" class="Qaydalar">
+                                        <ul>
+                                            <li>
+                                                AlApar.Az -da bir ay ərzində eyni nömrədən 2 pulsuz elan yerləşdirmək olar. Bir elandan 1 dəfə istifadə etmək qadağandır.
+
+                                            </li>
+                                            <li>
+                                                Bir ay ərzində pulsuz elan limitini keçdikdə, hər növbəti elanın qiyməti - 5 AZN olacaq.
+
+                                            </li>
+                                            <li>
+                                                Elanlar vaxtından əvvəl silinsə də, nömrə üçün nəzərdə tutulmuş ödənişsiz yer, elan dərc ediləndən 30 gün sonra bərpa edilir.
+
+                                            </li>
+                                            <li>
+                                                AlApar.Az saytında istifadə etdiyiniz ödənişli xidmətlər üçün nəzərdə tutulan məbləğ geri qaytarılmır.
+                                            </li>
+                                            <li>
+                                                Elanınızla bağlı bütün məlumatlar sizin e-mail ünvanınıza göndərilir.
+                                            </li>
+                                            <li>
+                                                Üzərində AlApar.Az saytı da daxil olmaqla digər saytların loqotipləri olan şəkillər qəbul edilməyəcək.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="submit" id="SubmitBtn">Yerləşdirmək</button>
+                                    </center>
+                            </form>
+
+                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <center>
+            <div class="footer-copyright text-center py-3">© 2018 AlApar.Az
+
+            </div>
+        </center>
+        <!-- Copyright -->
+
+    </footer>
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/AddAd.js"></script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzMYVS20BAc_8jMdgAX_Gp_jLk8795rC8&callback=initMap">
+    </script>
+</body>
+
+</html>
